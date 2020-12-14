@@ -36,6 +36,7 @@ color: black;
 margin: 0;
 display: inline;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +44,7 @@ display: inline;
 
 section {
     padding-top: 300px ;
-    background-image: url(" ../Endless-Possibilities/assets/finger-pointing-at-javascript-code.jpg");
+    background-image: url("../Endless-Possibilities/assets/finger-pointing-at-javascript-code.jpg");
 }
 .h2 {
     
@@ -53,7 +54,74 @@ section {
 }
 
 .h2-text {
-    font-size: 50px;
+    font-size: 75px;
     color: white;
     float: right;
+}
+#About-Me {
+    background-image: none;
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+font-weight: bold;
+margin: 0;
+font-size: 50px;
+}
+p {
+    font-size: 35px;
+    margin: 5px 0;
+}
+
+div {
+    background-color: none;
+}
+img-container {
+    display: grid;
+    display: flex;
+    height: 750px;
+padding: 50px;
+
+}
+
+footer {
+    background-color: mediumpurple;
+    font-weight: bolder;
+    color: black;
+    font-size: 50px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: black;
+}
+
+footer nav {
+    float: right;
+   margin: 10px;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    margin: 0 25px;
+    font-weight: lighter;
+    font-size: 25[x];
+}
+
+footer h2 {
+font-weight: bold;
+font-size: 75px;
+color: black;
+margin: 0;
+display: inline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
