@@ -1,127 +1,252 @@
-* {
-    box-sizing: border-box;
-}
-
-header {
-    background-color: mediumpurple;
-    font-weight: bolder;
-    color: black;
-    font-size: 50px;
-}
-
-header a {
-    text-decoration: underline;
-    color: black;
-}
-
-header nav {
-    float: right;
-   margin: 10px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    margin: 0 25px;
-    font-weight: lighter;
-    font-size: 25[x];
-}
-
-header h1 {
-font-weight: bold;
-font-size: 75px;
-color: black;
-margin: 0;
-display: inline;
+:root {
+    --primary-color: #351F39;
+    --secondary-color: #726A95;
+    --tertiary-color: #719FB0;
+    --other-color: #a0c1b8;
 }
 
 * {
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
 }
 
-section {
-    padding-top: 300px ;
-    background-image: url("../Endless-Possibilities/assets/finger-pointing-at-javascript-code.jpg");
-}
-.h2 {
-    
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-}
-
-.h2-text {
-    font-size: 75px;
-    color: white;
-    float: right;
-}
-#About-Me {
-    background-image: none;
-    background-color: mediumpurple;
+.top-panel{
+    margin: 0;
+    height: 200px;
+    background-color:var(--primary-color);
+    background-image: url("./assets/finger-pointing-at-javascript-code.jpg"); 
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
 }
-
-h2 {
-font-weight: bold;
-margin: 0;
-font-size: 50px;
+.page-title {
+    position: relative;
+    padding-left: 4rem;
+    font-size: 55px;
+    font-weight: bolder;
+    color:var(--other-color);
 }
-p {
-    font-size: 35px;
-    margin: 5px 0;
-}
-
-div {
-    background-color: none;
-}
-img-container {
-    display: grid;
-    display: flex;
-    height: 750px;
-    padding: 10px; 
+.nav-container {
+    position: relative;
+    right: 0;
+    top: 0;
+    padding-right: 2rem;
+    color: var(--secondary-color);
 }
 
-footer {
-    background-color: mediumpurple;
-    font-weight: bold;
-    color: black;
-    font-size: 50px;
-   
-}
-
-footer a {
-    text-decoration: underline;
-    color: black;
-}
-
-footer nav {
-    float: right;
-   margin: 10px;
-}
-
-footer nav ul li {
+.li-links {
+    position:relative;
+    padding: 5rem;
+    list-style: none;
+    font-size: 40px;
     display: inline;
 }
-
-footer nav ul li a {
-    margin: 0 25px;
-    font-weight: lighter;
-    font-size: 25[x];
+.li-links a {
+    color: var(--other-color);
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;    
+}
+.contact {
+    width: 98%;
+    position: relative;
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    justify-content: space-between;
+    box-shadow: 0 0 10px;
+}
+.contact h2 {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+}
+.contact ul li {
+    display: inline;
+    padding: 1rem;
 }
 
-footer h2 {
-font-weight: bold;
-font-size: 50px;
-color: black;
-margin: 0;
-display: inline;
+.contact ul li a {
+    color:black;
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+}
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    min-height: 300px;
+    background-color: var(--secondary-color);
+    margin: 35px;
+    box-shadow: 0 0 10px;
+}
+.section-title {
+    font-size: 45px;
+    justify-content: left;
+    padding: 7rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+#about-me p { 
+    font-size: 35px;
+    padding: 5rem 1rem;
+}
+#my-work {
+   background-color: var(--secondary-color);
+   width: 98%;
+   min-height: 950px;
+   background-size: cover;
+   display: flex;
+   box-shadow: 0 0 10px;  
+   margin: 35px;  
+   align-items: center;
+}
+.work-panel {
+    width: 10%;
+    font-size: 45px;
+    justify-content: center;
+    padding: 5rem;
+}
+.work-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 2px solid var(--other-color);
+    font-size: 35px;
+    box-shadow: 0 0 10px;
+}
+.work-img {
+    padding: 20px;
+    border: 10px solid var(--other-color);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    box-shadow: 0 0 10px;
+    border-radius: 15px;
+}
+.work-img.run-buddy {
+  grid-column: 1/span 2;   
+  background-image: url("./assets/startup-desk.jpg");
+  
+
+}
+.work-img.run-buddy:hover {
+    background-size: 200rem;
+}
+.work-img.screen-genius {
+   grid-column: 4/span 1;
+   grid-row: 1/span 2;
+   background-image:url("./assets/startup-desk.jpg")
+} 
+
+.work-img.left-overs {
+    background-image:url("./assets/lunch-box-with-cutlery.jpg")
+}
+
+.work-img.fuber {
+    background-image: url("./assets/new-york-city-yellow-taxi.jpg");
+}
+.work-img.w-atch {
+    background-image: url("./assets/kids-giggle-on-steps.jpg");
+}
+.work-img.mallafriq {
+    background-image: url("./assets/shopify-logo-window-with-plant.jpg");
+}
+.work-img.mother-earth {
+    background-image: url("./assets/snowy-winter-city.jpg");
+}
+.primary-border {
+    border-right: 5px solid;
+}
+.text-color {
+    color: white;
+}
+
+/*Media query for tablets and smaller*/
+
+@media screen and (max-width: 980px) {
+/*This will be aplied to screens between 980px and 768px*/
+    .page-title{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .ul-container {
+        width: 100%;
+        margin-top: 20px;
+        justify-content:center;
+    }
+ .li-links a {
+color: red;
+font-size: 18px;
+}
+.work-panel {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.work-img {
+    flex: 1 100%;
+    justify-content: center;
+    text-align: center;
+}
+.work-img h3 {
+    font-size: 18px;
+}
+.work-img p {
+    font-size: 13px;
+    text-align: center;
+}
+.primary-border {
+    font-size: 18px;
+}
+.contact div {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+/* This will be applied to screens between 768px and 575px */
+header {
+    padding: 30px 15px;
+}
+section {
+    padding: 30px 15px;
+}
+.primary-border {
+    flex: 1 100%;
+    text-align: center;
+}
+.work-container {
+    grid-template-columns: 1fr 1fr;
+    }
+.work-img p {
+    flex: 100%;
+    }
+}
+ 
+@media screen and (max-width: 575px) {
+/*This will apply to screens 575px and smaller */
+header {
+    width: 90%;
+}
+section {
+    width: 90%;
+}
+.work-img {
+    flex: 0 100%;
+}
+.work-img p {
+    width: 100%;
+    text-align:center;
+}
 }
